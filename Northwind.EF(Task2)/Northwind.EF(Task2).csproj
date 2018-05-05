@@ -71,7 +71,21 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Migrations\201805051358068_Version_1.cs" />
+    <Compile Include="Migrations\201805051358068_Version_1.Designer.cs">
+      <DependentUpon>201805051358068_Version_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805051423356_Version_2.cs" />
+    <Compile Include="Migrations\201805051423356_Version_2.Designer.cs">
+      <DependentUpon>201805051423356_Version_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805051427568_Version_3.cs" />
+    <Compile Include="Migrations\201805051427568_Version_3.Designer.cs">
+      <DependentUpon>201805051427568_Version_3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\CreditCard.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\CustomerDemographic.cs" />
     <Compile Include="Models\Employee.cs" />
@@ -87,13 +101,22 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="northwnd.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <Content Include="northwnd.mdf" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201805051358068_Version_1.resx">
+      <DependentUpon>201805051358068_Version_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805051423356_Version_2.resx">
+      <DependentUpon>201805051423356_Version_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805051427568_Version_3.resx">
+      <DependentUpon>201805051427568_Version_3.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

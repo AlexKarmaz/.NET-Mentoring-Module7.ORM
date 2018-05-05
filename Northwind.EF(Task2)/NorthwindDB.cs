@@ -14,6 +14,7 @@ namespace Northwind.EF_Task2_
 
         public virtual DbSet<Category> Categories { get; set; }
         public virtual DbSet<CustomerDemographic> CustomerDemographics { get; set; }
+        public virtual DbSet<CreditCard> CreditCards { get; set; }
         public virtual DbSet<Customer> Customers { get; set; }
         public virtual DbSet<Employee> Employees { get; set; }
         public virtual DbSet<Order_Detail> Order_Details { get; set; }
