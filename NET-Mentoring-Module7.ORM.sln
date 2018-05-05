@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.LinqToDb(Task1)", "Northwind.LinqToDb(Task1)\Northwind.LinqToDb(Task1).csproj", "{B9427BBF-019D-45CA-8858-0C73A6C05124}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.EF(Task2)", "Northwind.EF(Task2)\Northwind.EF(Task2).csproj", "{C014ECBE-385F-4F1D-B9AB-20C1245686F8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{B9427BBF-019D-45CA-8858-0C73A6C05124}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B9427BBF-019D-45CA-8858-0C73A6C05124}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B9427BBF-019D-45CA-8858-0C73A6C05124}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C014ECBE-385F-4F1D-B9AB-20C1245686F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C014ECBE-385F-4F1D-B9AB-20C1245686F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C014ECBE-385F-4F1D-B9AB-20C1245686F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C014ECBE-385F-4F1D-B9AB-20C1245686F8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
