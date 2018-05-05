@@ -14,18 +14,16 @@ namespace Northwind.EF_Task2_.Migrations
 
         protected override void Seed(Northwind.EF_Task2_.NorthwindDB context)
         {
-            //  This method will be called after migrating to the latest version.
+            context.Categories.AddOrUpdate(c => c.CategoryName,
+                new Category { CategoryName = "Vehicles" },
+                new Category { CategoryName = "Drinks" });
 
-            //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
-            //  to avoid creating duplicate seed data. E.g.
-            //
-            //    context.People.AddOrUpdate(
-            //      p => p.FullName,
-            //      new Person { FullName = "Andrew Peters" },
-            //      new Person { FullName = "Brice Lambson" },
-            //      new Person { FullName = "Rowan Miller" }
-            //    );
-            //
+            context.Regions.AddOrUpdate(r => r.RegionID,
+                new Region { RegionDescription = "Minsk", RegionID = 5 });
+
+            context.Territories.AddOrUpdate(t => t.TerritoryID,
+                new Territory { TerritoryID = "199766", TerritoryDescription = "Railway station", RegionID = 5 },
+                new Territory { TerritoryID = "343241232", TerritoryDescription = "Independent square", RegionID = 5 });
         }
     }
 }
